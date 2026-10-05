@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Link the external CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
-  <p>This is my first static website.</p>
+
+  <!-- NAVIGATION MENU -->
+  <header>
+    <nav>
+      <h2 class="logo">Your Name</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <h1>Hi, I'm Your Name</h1>
+      <p>I am a student learning web design. I enjoy building simple and clean websites using HTML, CSS and JavaScript.</p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>To-Do List App</h3>
+          <p>A task manager built with JavaScript where you can add, delete and complete tasks.</p>
+        </div>
+        <div class="project">
+          <h3>Weather App</h3>
+          <p>Shows live weather for any city using a weather API.</p>
+        </div>
+        <div class="project">
+          <h3>Blog Website</h3>
+          <p>A responsive blog layout built with Bootstrap.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-<p>This line was added in the feature branch.</p>
